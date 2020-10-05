@@ -26,7 +26,29 @@ export class Pokemon {
    * @param names list of names
    */
   public async getPokemonsByNameList(names: string[]): Promise<IPokemon[]> {
-    // TO BE IMPLEMENTED
+    // TO BE IMPLEMENTED (my implementation)
+    var validname:string[];
+    var  invalidname:string[];
+    
+    names.forEach( element => {
+      if(this.checkNameValid(element)) {
+        validname.push(element);
+      } else {
+        invalidname.push(element);
+      }
+    })
+
+      var response  = {
+        data: validname.
+        error:
+      }
+
+
+
+    
+    
+
+
     return null;
   }
 
